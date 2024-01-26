@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav
+      class="fixed left-0 right-0 top-0 flex justify-between bg-white bg-opacity-75 p-5 shadow-lg"
+    >
+      <div class="flex">
+        <img
+          class="w-8 rounded-full shadow-lg"
+          src="data:image/jpeg;base64,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"
+          alt="profile"
+        />
+        <h1 class="mx-3 text-2xl font-bold text-blue-800">Yashodeep</h1>
+      </div>
+
+      <ul class="hidden cursor-pointer font-semibold md:flex">
+        <li class="px-4 hover:border-b-2 hover:text-blue-600">Home</li>
+        <li class="px-4 hover:border-b-2 hover:text-blue-600">Projects</li>
+        <li class="px-4 hover:border-b-2 hover:text-blue-600">skills</li>
+        <li class="px-4 hover:border-b-2 hover:text-blue-600">contact</li>
+      </ul>
+    </nav>
+
+    <!-- first page -->
+
+    <div class="flex flex-wrap items-center justify-center min-h-screen">
+      <div class="text-center">
+        <h1 class="p-4 text-4xl font-semibold md:text-6xl">
+          Hey, It's Yashodeep
+        </h1>
+        <p class="p-4 text-lg">
+          A fullstack developer skilled in React, Tailwind, Next, express, Node,
+          Express and Tailwindcss
+        </p>
+        <button
+          class="m-2 rounded-xl bg-blue-500 px-9 py-3 text-2xl font-semibold text-white shadow-md hover:bg-blue-600 hover:shadow-xl"
+        >
+          Projects
+        </button>
+      </div>
+    </div>
+
+    <!-- about and skills page -->
+
+    <div class="flex min-h-screen flex-col items-center justify-center">
+      <h1 class="items-center py-4 text-4xl font-bold text-blue-800">
+        About Me
+      </h1>
+
+      <div class="mx-4 px-4 md:w-1/2">
+        <p>
+          I'm a Frontend Web Developer building the Front-end of Websites and
+          Web Applications that leads to the success of the overall product.
+          Check out some of my work in the Projects section. I also like sharing
+          content related to the stuff that I have learned over the years in Web
+          Development so it can help other people of the Dev Community. Feel
+          free to Connect or Follow me on my Linkedin where I post useful
+          content related to Web Development and Programming I'm open to Job
+          opportunities where I can contribute, learn and grow. If you have a
+          good opportunity that matches my skills and experience then don't
+          hesitate to contact me.
+        </p>
+      </div>
+      <h1 class="items-center py-6 text-4xl font-bold text-blue-800">Skills</h1>
+      <div class="mx-4 my-5 w-1/2 w-full md:w-1/2">
+        <ul class="flex flex-wrap text-lg">
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">React</li>
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">Tailwind</li>
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">Redux</li>
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">Node</li>
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">Express</li>
+          <li class="m-4 rounded-2xl bg-gray-200 px-5 py-2">MongoDB</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- projects -->
+
+    <div class="flex flex-col items-center justify-center">
+      <h1 class="items-center py-6 text-4xl font-bold text-blue-800">
+        Projects
+      </h1>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class="m-4 w-72">
+          <img
+            class="w-72"
+            src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg"
+            alt="project"
+          />
+          <h1 class="py-4 text-lg font-bold">Dopefolio</h1>
+          <p>
+            Dopefolio is a successful Open-Source project that I created which
+            have been featured on some of the biggest tech sites like
+            CSS-Tricks, Hostinger, etc & used by thousands of developers
+            globally
+          </p>
+          <button
+            class="m-8 rounded-2xl bg-blue-500 px-6 py-3 text-white shadow-md hover:shadow-xl"
+          >
+            Show More
+          </button>
+        </div>
+        <div class="m-4 w-72">
+          <img
+            class="w-72"
+            src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg"
+            alt="project"
+          />
+          <h1 class="py-4 text-lg font-bold">Dopefolio</h1>
+          <p>
+            Dopefolio is a successful Open-Source project that I created which
+            have been featured on some of the biggest tech sites like
+            CSS-Tricks, Hostinger, etc & used by thousands of developers
+            globally
+          </p>
+          <button
+            class="m-8 rounded-2xl bg-blue-500 px-6 py-3 text-white shadow-md hover:shadow-xl"
+          >
+            Show More
+          </button>
+        </div>
+        <div class="m-4 w-72">
+          <img
+            class="w-72"
+            src="https://d33wubrfki0l68.cloudfront.net/19c708670a1f21231c1e2efa6ba38dbf52b15343/3237e/assets/jpeg/dopefolio.jpeg"
+            alt="project"
+          />
+          <h1 class="py-4 text-lg font-bold">Dopefolio</h1>
+          <p>
+            Dopefolio is a successful Open-Source project that I created which
+            have been featured on some of the biggest tech sites like
+            CSS-Tricks, Hostinger, etc & used by thousands of developers
+            globally
+          </p>
+          <button
+            class="m-8 rounded-2xl bg-blue-500 px-6 py-3 text-white shadow-md hover:shadow-xl"
+          >
+            Show More
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
